@@ -10,7 +10,6 @@ class ChangePasswordPage extends StatefulWidget {
   @override
   _ChangePasswordPageState createState() => _ChangePasswordPageState();
 }
-//check
 
 class _ChangePasswordPageState extends State<ChangePasswordPage> {
   @override
