@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '/utils/color.dart';
 import '/widgets/btn_widget.dart';
 import '../widgets/header_container.dart';
-import 'changepw_page.dart';
+import 'changpw_page.dart';
 
 class HomePage extends StatefulWidget {
   @override

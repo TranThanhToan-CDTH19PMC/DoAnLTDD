@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/trangchu.dart';
 import 'regi_page.dart';
 import 'home.dart';
 import '/utils/color.dart';
@@ -42,7 +43,7 @@ class _LoginPageState extends State<LoginPage> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => HomePage()));
+                                    builder: (context) => TrangChu()));
                           },
                           btnText: "Đăng Nhập",
                         ),
