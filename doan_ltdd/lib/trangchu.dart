@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
+import 'package:flutter_application_1/profile.dart';
+import 'package:flutter_application_1/search.dart';
 import 'package:flutter_application_1/showless_showmore.dart';
 import 'package:meta/meta.dart';
 
@@ -79,6 +81,9 @@ class TrangChu extends StatelessWidget {
       ),
     );
     return MaterialApp(
+      theme: ThemeData(
+        primarySwatch: Colors.green,
+      ),
       home: DefaultTabController(
         length: 2,
         child: Scaffold(
@@ -95,7 +100,7 @@ class TrangChu extends StatelessWidget {
               ListView(
                 children: [baiviet, baiviet, baiviet],
               ),
-              Container(child: new Diadanh()),
+              Container(child: new Search()),
             ],
           ),
           drawer: Drawer(
@@ -104,18 +109,17 @@ class TrangChu extends StatelessWidget {
               children: [
                 const DrawerHeader(
                   decoration: BoxDecoration(
-                    color: Colors.blue,
+                    color: Colors.green,
                   ),
                   child: Text('Menu'),
                 ),
                 ListTile(
                   title: const Text('Profile'),
                   onTap: () {
-                    /*Navigator.push(
+                    Navigator.push(
                       context,
-                      MaterialPageRoute(
-                          builder: (context) => FbCloneProfileStful()),
-                    );*/
+                      MaterialPageRoute(builder: (context) => Profile()),
+                    );
                   },
                 ),
                 ListTile(
