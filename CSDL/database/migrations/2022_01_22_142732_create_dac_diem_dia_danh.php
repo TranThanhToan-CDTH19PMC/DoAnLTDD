@@ -18,6 +18,7 @@ class CreateDacDiemDiaDanh extends Migration
             $table->Text('canh_vat');
             $table->Text('khi_hau');
             $table->Text('tai_nguyen');
+            $table->text('hinh_anh');
             $table->timestamps();
             $table->softDeletes();
         });

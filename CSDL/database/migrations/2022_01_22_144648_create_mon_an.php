@@ -21,6 +21,7 @@ class CreateMonAn extends Migration
             $table->Text('ten_quan');
             $table->Text('dia_chi');
             $table->Text('sdt');
+            $table->text('hinh_anh');
             $table->softDeletes();
             $table->timestamps();
         });

@@ -20,6 +20,7 @@ class CreateThongTinLuuChu extends Migration
             $table->Text('dia_chi');
             $table->Text('SDT');
             $table->Text('gia_thanh');
+            $table->text('hinh_anh');
             $table->softDeletes();
             $table->timestamps();
         });
